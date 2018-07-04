@@ -1,0 +1,23 @@
+extends layout
+block content
+    div
+    form(method="post" action="/add" enctype="multipart/form-data")
+        .form-group
+        label cover
+        input.form-control(name="cover", type="file")
+        .form-group
+        label Title
+        input.form-control(name="title", type="text", placeholder="add title")
+        .form-group
+        label Author
+        input.form-control(name="author", type="text", placeholder="add author")
+        .form-group
+        label Editor
+        input.form-control(name="editor", type="text", placeholder="editor")
+        .form-group
+        label Price
+        input.form-control(name="price", type="number", placeholder="price")
+        .form-group
+        label Pages
+        input.form-control(name="pages", type="number", placeholder="pages")
+        input(type="submit", value="submit")    

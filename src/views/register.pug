@@ -1,0 +1,18 @@
+extends layout.pug
+block content
+  form( method="post" action="" enctype="multipart/form-data" )
+    .form-group
+      label Name
+      input.form-control(name="name", type="text", placeholder="your name")
+    .form-group
+      label email
+      input.form-control(email="email", type="text", placeholder="your email")
+    .form-group
+      label username
+      input.form-control(username="username", type="text", placeholder="your username")
+    .form-group
+      label password
+      input.form-control(password="password", type="text", placeholder="your password")
+    .form-group
+      label password
+      input.form-control(password2="password2", type="text", placeholder="verify password")

@@ -1,0 +1,13 @@
+extends layout.pug
+block content
+  each book in books
+    div
+      h2= book.title
+      - var image = book.cover
+      img(src="/uploads/" + image)
+      - var bookID = book.id
+      a(href="/" + bookID)
+       button see more 
+
+
+    

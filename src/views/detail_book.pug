@@ -1,0 +1,8 @@
+extends layout.pug
+block content
+  div
+    h2= book.title
+    h2= book.author
+    p= book.pages
+    - var image = book.cover
+    img(src="/uploads/" + image)    
